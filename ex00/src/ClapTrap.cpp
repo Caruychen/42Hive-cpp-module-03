@@ -88,7 +88,6 @@ void ClapTrap::beRepaired(unsigned int amount)
       return;
     }
     this->_energyPoints--;
-    this->_hitPoints += amount;
     this->_hitPoints += std::min(amount, MAX_HIT_POINTS - this->_hitPoints);
     std::cout \
       << "ClapTrap " << this->_name \
