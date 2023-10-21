@@ -5,10 +5,13 @@ int main(void)
 {
   ScavTrap scavvie("scavvie");
   scavvie.attack("target");
+  scavvie.guardGate();
   scavvie.takeDamage(2);
   scavvie.beRepaired(1);
   scavvie.takeDamage(100);
   scavvie.attack("target");
+  scavvie.guardGate();
+  scavvie.takeDamage(2);
   scavvie.beRepaired(2);
 
   ScavTrap scavvie2(scavvie);
